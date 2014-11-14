@@ -1,3 +1,30 @@
 // Place all the styles related to the Customers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+	width: 1200px;
+}
+
+.customer {
+	border: 1px solid grey;
+	margin: 10px;
+	padding: 10px;
+	width: 300px;
+	height: 500px;
+	display: inline-block;
+	float: left;
+	box-shadow: 2px 1px 7px 1px grey;
+
+	img {
+		width: 200px;
+	}
+
+	ul li {
+		display: inline;
+	}
+
+	#notes {
+		width: 300px;
+	}
+}

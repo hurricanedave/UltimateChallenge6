@@ -1,5 +1,5 @@
 <h1>Listing customers</h1>
-
+<!-- 
 <table>
   <thead>
     <tr>
@@ -10,9 +10,14 @@
       <th>Notes</th>
       <th colspan="3"></th>
     </tr>
-  </thead>
+  </thead> -->
+<%= link_to 'New Customer', new_customer_path %>
 
-  <tbody>
+<%= render partial: 'customer',
+           collection: @customers,
+           locals: { display_link_to_show: true } %>
+
+<!--   <tbody>
     <% @customers.each do |customer| %>
       <tr>
         <td><%= customer.name %></td>
@@ -26,8 +31,6 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
 
 <br>
-
-<%= link_to 'New Customer', new_customer_path %>
